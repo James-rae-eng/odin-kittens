@@ -1,5 +1,11 @@
 <h1>All kittens</h1>
 
+<% flash.each do |type, msg| %>
+  <div>
+    <%= msg %>
+  </div>
+<% end %>
+
 <ul>
     <% @kittens.each do |kitten| %>
             <li>
